@@ -1,2 +1,2 @@
 # testBridgeApp
-Repositorio para la version movil del sitio web
+Repositorio para la app movil del proyecto TestBridge 
