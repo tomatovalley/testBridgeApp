@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TestBridge</string>
+
+    //Textos para pantalla registro dispositivo
+    <string name="txt_registro_dispositivo">Nombre del dispositivo</string>
+    <string name="txt_registro_categoria">Categoria</string>
+    <string name="txt_registro_sistema_operativo">Sistema operativo</string>
+    <string name="txt_registro_version_sistema_operativo">Version del sistema operativo</string>
+    <string name="btn_registrar_dispotivo">REGISTRAR</string>
 </resources>
