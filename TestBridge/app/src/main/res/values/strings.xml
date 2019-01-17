@@ -7,4 +7,9 @@
     <string name="txt_registro_sistema_operativo">Sistema operativo</string>
     <string name="txt_registro_version_sistema_operativo">Version del sistema operativo</string>
     <string name="btn_registrar_dispotivo">REGISTRAR</string>
+
+
+    //Textos para la pantalla de dashboard
+    <string name="txt_nombre_cliente">Raymundo Leon</string>
+    <string name="txt_tv_proyecto">PROYECTOS</string>
 </resources>
