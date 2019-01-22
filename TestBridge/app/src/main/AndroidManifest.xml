@@ -13,6 +13,8 @@
 
         </activity>
         <activity android:name=".RegistroDispositivo">
+        </activity>
+        <activity android:name=".Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

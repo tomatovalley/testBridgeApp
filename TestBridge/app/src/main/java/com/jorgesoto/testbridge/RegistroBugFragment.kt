@@ -16,7 +16,9 @@ class RegistroBugFragmento : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registro_bug_fragmento, container, false)
+        //Por medio del value view podemos acceder a los elementos/vistas del fragmento
+        val view = inflater.inflate(R.layout.fragment_registro_bug_fragmento, container, false)
+        return view
     }
 
 
