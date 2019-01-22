@@ -12,4 +12,38 @@
     //Textos para la pantalla de dashboard
     <string name="txt_nombre_cliente">Raymundo Leon</string>
     <string name="txt_tv_proyecto">PROYECTOS</string>
+
+    //Textos para la el fragmento de informacion del proyecto
+    <string name="txt_tv_id_proyecto">Proyecto ID:</string>
+    <string name="txt_tv_id_numero">76213</string>
+    <string name="txt_tv_tipo_proyecto">Proyecto Funcional</string>
+    <string name="txt_tv_plataforma_proyecto">Web - Movil</string>
+    <string name="txt_tv_pago_proyecto">20.0</string>
+    <string name="txt_tv_dispositivos_solicitados">Dispositivos Solicitados</string>
+    <string name="txt_tv_nombre_dispositivo_1">PC</string>
+    <string name="txt_tv_nombre_dispositivo_2">Mac</string>
+    <string name="txt_tv_nombre_dispositivo_3">Samsung Galaxy S9</string>
+    <string name="txt_tv_sistemasoperativos_solicitados">Sistemas Operativos</string>
+    <string name="txt_tv_version_sistemaoperativo_1">Windows 10 o superior</string>
+    <string name="txt_tv_version_sistemaoperativo_2">Mac OS 10.12 o superior</string>
+    <string name="txt_tv_version_sistemaoperativo_3">Android 9 Pie o superior</string>
+    <string name="txt_tv_caracteristicas_a_probar">Caracteristicas a probar</string>
+    <string name="txt_tv_informacion_caracteristicas_a_probar">Probar que todos los botones funcionen, que las cajas de
+        texto esten validadas.
+    </string>
+    <string name="btn_aceptar_proyecto">ACEPTAR</string>
+    <string name="btn_rechazar_proyecto">RECHAZAR</string>
+
+    //Textos para el fragmento registro de bug encontrado
+    <string name="txt_tv_nombre_bug">Nombre del bug:</string>
+    <string name="txt_tv_descripcion_bug">Descripcion:</string>
+    <string name="txt_tv_detalles_reproduccion_bug">Detalles de reproduccion:</string>
+    <string name="txt_tv_severidad_bug">Severidad:</string>
+    <string name="txt_tv_adjuntos_bug">Adjuntos:</string>
+    <string name="btn_enviar_bug">ENVIAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
