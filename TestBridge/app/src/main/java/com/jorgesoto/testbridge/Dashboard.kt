@@ -13,12 +13,33 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+        //JSON DEL PROYECTO
+        var jsonTester = "{ \"Users\" : [ " +
+                "{" +
+                " \"username\" : \"root\" ," +
+                " \"password\" : \"pass1234\" ," +
+                " \"user_type\" : \"TESTER\" ," +
+                " \"projectos\" : [ "+
+                "{"+
+                " \"project_id\" : \"1\"," +
+                " \"project\" : \"Testbridge\"," +
+                " \"type\" : \"MOBILE\"," +
+                " \"type\" : \"MOBILE\"," +
+                ""+"]"+"}" +
+
+                "{" +
+                " \"nombre\" : \"Agustín\" ," +
+                " \"pais\" : \"España\" ," +
+                " \"estado\" : \"casado\" ," +
+                " \"experiencia\" : 16}" +
+                " ]" +
+                " }"
+
         btnAceptarProyecto.setOnClickListener {
             val fragmentManager = supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             val fragmentoNuevo = RegistroBugFragmento()
             fragmentTransaction.replace(R.id.contenedorFragmento,fragmentoNuevo)
-            fragmentTransaction.setTransition()
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
