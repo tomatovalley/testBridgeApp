@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
 //set content view AFTER ABOVE sequence (to avoid crash)
         this.setContentView(R.layout.activity_main)
+
+
     }
 
 
