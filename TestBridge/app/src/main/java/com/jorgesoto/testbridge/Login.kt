@@ -38,10 +38,16 @@ class Login : AppCompatActivity() {
                 Response.Listener {
                     response ->
 
+                    // Credenciales para test
+
+                    //   "email": "peter@klaven",
+                    //    "password": "cityslicka"
+
+                    // Guardar el usuario
+                    UserModel.username = etUsuario.text.toString()
+
                     var i = Intent(this, Dashboard::class.java)
                     startActivity(i)
-
-
 
 
                 }, Response.ErrorListener {
