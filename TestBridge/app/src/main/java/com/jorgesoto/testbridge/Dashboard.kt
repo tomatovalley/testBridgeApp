@@ -58,11 +58,10 @@ class Dashboard : AppCompatActivity() {
             })
         que.add(req)
 
-
-
-
-
-
+        btnAbrirRegistroDispositivo.setOnClickListener {
+            val intent = Intent(this,RegistroDispositivo::class.java)
+            startActivity(intent)
+        }
 
         btnAceptarProyecto.setOnClickListener {
             val fragmentManager = supportFragmentManager

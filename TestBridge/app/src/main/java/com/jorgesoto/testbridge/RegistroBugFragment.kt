@@ -6,10 +6,13 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import kotlinx.android.synthetic.main.activity_registro_dispositivo.view.*
+import org.json.JSONObject
 
 
 class RegistroBugFragmento : Fragment() {
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

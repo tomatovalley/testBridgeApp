@@ -8,7 +8,6 @@
         tools:context=".Login">
 
     <EditText
-            android:text="Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -16,9 +15,8 @@
             android:id="@+id/etContrasena" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/etUsuario" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" android:text="@string/txt_et_password"/>
     <EditText
-            android:text="Usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -26,7 +24,7 @@
             android:id="@+id/etUsuario" android:layout_marginTop="164dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" android:text="@string/txt_et_usuario"/>
     <ImageButton
             android:layout_width="wrap_content"
             android:backgroundTint="@android:color/transparent"
@@ -34,25 +32,12 @@
             android:id="@+id/btnEntrar" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/etContrasena" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <TextView
-            android:text="Nuevo?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4" android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnEntrar" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="132dp"/>
-    <TextView
-            android:text="REGISTRATE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6" android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnEntrar" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="124dp"/>
+            app:layout_constraintEnd_toEndOf="parent" android:contentDescription="@string/txt_btn_entrar"/>
     <ImageView
             android:layout_width="993dp"
             android:layout_height="561dp" app:srcCompat="@drawable/fondo_abajo"
-            android:id="@+id/imageView5" android:layout_marginTop="116dp"
+            android:id="@+id/imageView5" android:layout_marginTop="160dp"
             app:layout_constraintTop_toBottomOf="@+id/btnEntrar" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:contentDescription="@string/txt_iv_imagenFondoAbajo" app:layout_constraintHorizontal_bias="0.493"/>
 </android.support.constraint.ConstraintLayout>

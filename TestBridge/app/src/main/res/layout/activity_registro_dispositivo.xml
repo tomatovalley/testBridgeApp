@@ -80,5 +80,5 @@
             app:layout_constraintTop_toBottomOf="@+id/btnRegistrarDispositivo"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.602"
-            app:layout_constraintVertical_bias="0.029"/>
+            app:layout_constraintVertical_bias="0.029" android:contentDescription="@string/txt_iv_imagenFondoAbajo"/>
 </android.support.constraint.ConstraintLayout>
