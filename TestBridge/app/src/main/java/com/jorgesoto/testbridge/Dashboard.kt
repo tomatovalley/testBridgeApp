@@ -2,6 +2,7 @@ package com.jorgesoto.testbridge
 
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_dashboard.*
@@ -15,32 +16,14 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        //JSON DEL PROYECTO
-        var jsonTester = "{ \"Users\" : [ " +
-                "{" +
-                " \"username\" : \"root\" ," +
-                " \"password\" : \"pass1234\" ," +
-                " \"user_type\" : \"TESTER\" ," +
-                " \"projectos\" : [ "+
-                "{"+
-                " \"project_id\" : \"1\"," +
-                " \"project\" : \"Testbridge\"," +
-                " \"type\" : \"MOBILE\"," +
-                " \"type\" : \"MOBILE\"," +
-                ""+"]"+"}" +
-
-                "{" +
-                " \"nombre\" : \"Agustín\" ," +
-                " \"pais\" : \"España\" ," +
-                " \"estado\" : \"casado\" ," +
-                " \"experiencia\" : 16}" +
-                " ]" +
-                " }"
-
-
 
         textView.setText(UserModel.username)
 
+
+        btnAbrirRegistroDispositivo.setOnClickListener {
+            val intent = Intent(this,RegistroDispositivo::class.java)
+            startActivity(intent)
+        }
 
         btnAceptarProyecto.setOnClickListener {
             val fragmentManager = supportFragmentManager

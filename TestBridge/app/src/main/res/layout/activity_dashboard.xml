@@ -18,11 +18,11 @@
             android:text="@string/txt_nombre_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="40dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:textColor="@color/colorPaleta5" android:textSize="36sp"
-            app:layout_constraintHorizontal_bias="0.504"/>
+            app:layout_constraintHorizontal_bias="0.385"/>
     <Button
             android:layout_width="74dp"
             android:layout_height="53dp" android:id="@+id/btnAbrirRegistroDispositivo"
@@ -72,14 +72,14 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:id="@+id/contenedorFragmento">
 
-        <ScrollView
+        <fragment
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/scrollFRagmento">
-            <fragment
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:name="com.jorgesoto.testbridge.InformacionProyectoFragment"
-                    android:id="@+id/fragment"/>
-        </ScrollView>
+                android:layout_height="wrap_content"
+                android:name="com.jorgesoto.testbridge.InformacionProyectoFragment"
+                android:id="@+id/fragment" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0"/>
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
