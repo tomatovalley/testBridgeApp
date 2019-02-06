@@ -169,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="18dp"
                 android:id="@+id/textView23"
-                android:textColor="@color/colorPaleta3" tools:layout_editor_absoluteY="47dp"
+                android:textColor="@color/colorPaleta3" tools:layout_editor_absoluteY="35dp"
                 tools:layout_editor_absoluteX="100dp"/>
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>
