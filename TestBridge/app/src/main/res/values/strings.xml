@@ -46,7 +46,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_iv_imagenFondoAbajo">imagenFondoAbajo</string>
     <string name="txt_iv_logo">imagenLogo</string>
-    <string name="txt_et_password">Password</string>
+    <string name="txt_et_password">Contraseña</string>
     <string name="txt_et_usuario">Usuario</string>
     <string name="txt_btn_entrar">Entrar</string>
 

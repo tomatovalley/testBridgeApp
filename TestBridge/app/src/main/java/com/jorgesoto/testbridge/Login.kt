@@ -3,6 +3,7 @@ package com.jorgesoto.testbridge
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_login.*
 import android.widget.Toast
 import com.android.volley.Request
@@ -19,35 +20,61 @@ import org.json.JSONObject
 
 class Login : AppCompatActivity() {
 
-    var url = "https://reqres.in/api/login"
-
+    var tkn:TokenTB? = null
+    var url = "http://178.128.152.204:8080/api-auth/login/"
     val jsonObjs = JSONObject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        tkn = TokenTB(this)
+
         btnEntrar.setOnClickListener {
 
 
-            jsonObjs.put("email", etUsuario.text.toString())
-            jsonObjs.put("password", etContrasena.text.toString())
+//            jsonObjs.put("email", etUsuario.text.toString())
+//            jsonObjs.put("password", etContrasena.text.toString())
+
+            //Autenticacion
+            jsonObjs.put("username",etUsuario.text.toString())
+            jsonObjs.put("email","")
+            jsonObjs.put("password",etContrasena.text.toString())
+
+            /*
+            * Usuario cliente
+            * User: ray
+            * Pass: nomelose
+            * Usuario teser
+            * User: tester
+            * Pass: pruebas123*/
 
             val que = Volley.newRequestQueue(this@Login)
             val req = JsonObjectRequest(Request.Method.POST,url,jsonObjs,
                 Response.Listener {
                     response ->
 
+                    val token = response.get("key")
+                    Log.d("ACCESS_TOKEN",token.toString())
+//                    if(tkn?.hayToken()!!) {
+                        tkn?.guardarToken(token.toString())
+                        // Guardar el usuario
+                        UserModel.username = etUsuario.text.toString()
+                        startActivity(Intent(this,Dashboard::class.java))
+                        finish() //Terminamos esta actividad y ya no podemos regresar a ella
+//                    } else {
+//                        //se queda en activity login
+//                    }
+
                     // Credenciales para test
 
                     //   "email": "peter@klaven",
                     //    "password": "cityslicka"
 
-                    // Guardar el usuario
-                    UserModel.username = etUsuario.text.toString()
 
-                    var i = Intent(this, Dashboard::class.java)
-                    startActivity(i)
+
+                  //  var i = Intent(this, Dashboard::class.java)
+                   // startActivity(i)
 
 
                 }, Response.ErrorListener {
