@@ -177,7 +177,6 @@
                 tools:layout_editor_absoluteX="100dp"/>
 
     </android.support.constraint.ConstraintLayout>
-
     </ScrollView>
 
 </FrameLayout>

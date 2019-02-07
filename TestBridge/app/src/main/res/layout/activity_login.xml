@@ -15,7 +15,7 @@
             android:id="@+id/etContrasena" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/etUsuario" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent" android:text="@string/txt_et_password"/>
+            app:layout_constraintEnd_toEndOf="parent" android:hint="@string/txt_et_password"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:id="@+id/etUsuario" android:layout_marginTop="164dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent" android:text="@string/txt_et_usuario"/>
+            app:layout_constraintEnd_toEndOf="parent" android:hint="@string/txt_et_usuario"/>
     <ImageButton
             android:layout_width="wrap_content"
             android:backgroundTint="@android:color/transparent"
